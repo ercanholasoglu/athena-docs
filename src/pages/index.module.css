@@ -39,6 +39,16 @@
   padding-top: 3rem;
 }
 
+.overview {
+  padding-bottom: 4rem;
+}
+
+.overview p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 980px;
+}
+
 .card {
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 8px;

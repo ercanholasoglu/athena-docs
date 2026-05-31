@@ -49,7 +49,10 @@ const config: Config = {
       },
       items: [
         {to: '/', label: 'Home', position: 'left'},
-        {to: '/site-structure', label: 'Site Structure', position: 'left'},
+        {to: '/getting-started/installation', label: 'Getting Started', position: 'left'},
+        {to: '/concepts/decision-architecture', label: 'Concepts', position: 'left'},
+        {to: '/deployment/on-premise', label: 'Deployment', position: 'left'},
+        {to: '/security-compliance/authentication-sso', label: 'Security', position: 'left'},
       ],
     },
     footer: {
@@ -58,13 +61,17 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {label: 'Site Structure', to: '/site-structure'},
+            {label: 'Installation', to: '/getting-started/installation'},
+            {label: 'First Run', to: '/getting-started/first-run'},
+            {label: 'Decision Architecture', to: '/concepts/decision-architecture'},
           ],
         },
         {
-          title: 'Status',
+          title: 'Operations',
           items: [
-            {label: 'First content sprint pending', to: '/site-structure'},
+            {label: 'On-Premise', to: '/deployment/on-premise'},
+            {label: 'Backup & Recovery', to: '/operations/backup-recovery'},
+            {label: 'Support', to: '/site-structure'},
           ],
         },
       ],
