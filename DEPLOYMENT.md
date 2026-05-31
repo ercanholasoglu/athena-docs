@@ -28,8 +28,10 @@ ercanholasoglu/athena-docs
 Create and push:
 
 ```bash
-gh repo create ercanholasoglu/athena-docs --private --source=. --remote=origin --push
+gh repo create ercanholasoglu/athena-docs --public --source=. --remote=origin --push
 ```
+
+GitHub Pages requires the repository to be public on the current GitHub plan.
 
 If the repository already exists:
 
@@ -41,6 +43,15 @@ git push -u origin main
 ## GitHub Pages Settings
 
 In the GitHub repository:
+
+Current status:
+
+- GitHub Pages is enabled.
+- Source is GitHub Actions.
+- Custom domain is configured as `docs.athenaml.app`.
+- HTTPS enforcement is disabled until DNS points to GitHub Pages.
+
+If these settings need to be recreated manually:
 
 1. Go to Settings.
 2. Go to Pages.
@@ -100,6 +111,6 @@ Expected:
 
 ## Current Manual Blockers
 
-- GitHub Pages must be enabled with source `GitHub Actions`.
 - DNS must point `docs.athenaml.app` to `ercanholasoglu.github.io`.
-- The domain currently does not return a valid Athena Docs page until those steps are complete.
+- `http://docs.athenaml.app` currently resolves to a non-GitHub server, so the DNS record must be corrected before the custom domain can serve the docs.
+- After DNS propagation, enable "Enforce HTTPS" in GitHub Pages.
